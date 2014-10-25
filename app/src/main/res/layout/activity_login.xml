@@ -1,0 +1,167 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.mti.db.geobuddies.activities.LoginActivity"
+    android:background="@color/bgCadetBlue" >
+
+    <!--Login progress-->
+    <ProgressBar
+        android:id="@+id/login_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone" />
+
+    <!--Login form-->
+    <LinearLayout
+        android:id="@+id/user_login_form"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <!--GeoBuddies logo-->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/geobuddies_logo_login"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@string/geobuddies_logo"
+            android:src="@drawable/geobuddies_logo"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Stop auto focussing the EditText -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@android:color/transparent"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+        </LinearLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp" >
+
+            <!--Username-->
+            <TableRow
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                >
+
+                <TextView
+                    android:id="@+id/txt_username"
+                    android:layout_height="match_parent"
+                    android:layout_width="wrap_content"
+                    style="?android:textAppearanceSmall"
+                    android:text="@string/prompt_username"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:paddingRight="5dp"
+                    android:paddingLeft="5dp" />
+
+                <EditText
+                    android:layout_weight="2"
+                    android:layout_gravity="center"
+                    android:id="@+id/username"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="50dp"
+                    android:layout_marginRight="50dp"
+                    android:hint="@string/prompt_username"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+
+            </TableRow>
+
+            <!--Password-->
+            <TableRow
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" >
+
+                <TextView
+                    android:id="@+id/txt_password"
+                    android:layout_height="match_parent"
+                    android:layout_width="wrap_content"
+                    style="?android:textAppearanceSmall"
+                    android:text="@string/prompt_password"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:paddingRight="5dp"
+                    android:paddingLeft="5dp" />
+
+                <EditText
+                    android:layout_weight="2"
+                    android:layout_gravity="center"
+                    android:id="@+id/password"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="50dp"
+                    android:layout_marginRight="50dp"
+                    android:hint="@string/prompt_password"
+                    android:imeActionId="@+id/login"
+                    android:imeActionLabel="@string/action_sign_in"
+                    android:imeOptions="actionUnspecified"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+            </TableRow>
+        </TableLayout>
+
+
+        <!--Sign In Button-->
+        <Button
+            android:id="@+id/sign_in_button"
+            style="?android:textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/action_sign_in"
+            android:textStyle="bold"/>
+
+        <!--Keep me signed in checkbox-->
+        <!-- invisible for now -->
+        <CheckBox
+            android:id="@+id/remember_sign_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center"
+            android:text="@string/remember_checkbox"
+            android:visibility="invisible" />
+
+
+        <!--Empty space with a button at the bottom-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--Register Button-->
+            <Button
+                android:id="@+id/register_button"
+                style="?android:textAppearanceSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="@string/action_register" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
+
+
+

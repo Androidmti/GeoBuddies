@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="bgCadetBlue">#98f5ff</color>
+
+    <string name="app_name">GeoBuddies</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_register">Register New Account</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="geobuddies_logo">GeoBuddies Logo</string>
+    <string name="prompt_username">Username</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign In</string>
+    <string name="remember_checkbox">Keep me signed in</string>
+    <string name="action_register">Register</string>
+    <string name="prompt_first_name">First name</string>
+    <string name="prompt_last_name">Last name</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password_confirm">Confirm password</string>
+    <string name="action_back">Back</string>
+    <string name="action_refresh">Refresh</string>
+
+    <string name="error_invalid_username">This user name is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">The user name or password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="error_passwords_mismatch">The password fields don\'t match</string>
+    <string name="error_user_exists">User already exists, choose different username</string>
+    <string name="title_activity_maps">GeoBuddies</string>
+
+</resources>
